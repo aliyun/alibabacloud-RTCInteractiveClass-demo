@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/alivc_big_interactive_class_rl_content_class_room"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/alivc_biginteractiveclass_color_room_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/alivc_big_interactive_class_fl_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <SurfaceView
+        android:id="@+id/alivc_big_interactive_class_surface_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/alivc_big_interactive_class_iv_icon_class_not_begin"
+        android:scaleType="centerInside"
+        android:background="@drawable/alivc_biginteractiveclass_class_not_begin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/alivc_big_interactive_class_rcy_function_views"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_width="@dimen/alivc_biginteractiveclass_width_landsacpe_btn_354dp"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_10"
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_margin_26"
+        android:layout_marginRight="@dimen/alivc_biginteractiveclass_margin_26"
+        android:id="@+id/alivc_big_interactive_class_rcy_student_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/alivc_big_interactive_class_landscape_ib_back"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_padding_20"
+        android:background="@null"
+        android:src="@mipmap/aliyun_big_interactive_class_icon_back"
+        android:layout_width="@dimen/alivc_biginteractiveclass_height_titlebar_24"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_titlebar_24"/>
+
+    <TextView
+        android:id="@+id/alivc_big_interactive_class_tv_landscape_channel_name"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_padding_20"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_14"
+        android:textColor="@color/alivc_biginteractiveclass_color_text_white"
+        android:layout_toRightOf="@id/alivc_big_interactive_class_landscape_ib_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/alivc_big_interactive_class_landscape_ib_share"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_marginRight="@dimen/alivc_biginteractiveclass_padding_20"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/alivc_biginteractiveclass_share"
+        android:layout_width="@dimen/alivc_biginteractiveclass_height_titlebar_24"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_titlebar_24"/>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+include ':app'
+include ':RTCSolutionCommon'
+include ':RTCViewCommon'
+include ':RTCInteractiveClass_RTC:RTCInteractiveClass_demo'

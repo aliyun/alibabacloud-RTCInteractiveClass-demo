@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FullScreenVideoTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="hintTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/alivc_biginteractiveclass_color_text_gray</item>
+        <item name="colorControlNormal">@color/alivc_biginteractiveclass_color_text_gray</item>
+        <item name="colorControlActivated">@color/alivc_biginteractiveclass_color_text_gray</item>
+        <item name="colorControlHighlight">@color/alivc_biginteractiveclass_color_text_gray</item>
+    </style>
+
+    <style name="errorTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/alivc_biginteractiveclass_color_text_gray</item>
+        <item name="colorControlActivated">@color/alivc_biginteractiveclass_color_text_gray</item>
+        <item name="colorControlHighlight">@color/alivc_biginteractiveclass_color_text_gray</item>
+    </style>
+
+</resources>

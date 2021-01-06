@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name" translatable="false">1对1语聊</string>
+    <string name="alivc_big_interactive_class_string_title" translatable="false">互动大班课</string>
+    <string name="alivc_biginteractiveclass_string_hint_room_num" translatable="false">教室编号</string>
+    <string name="alivc_biginteractiveclass_string_btn_start_voice_call" translatable="false">开始上课</string>
+    <string name="alirtc_permission" translatable="false">请先申请权限</string>
+    <string name="alivc_biginteractiveclass_string_hint_double_click" translatable="false">请不要重复点击</string>
+    <string name="alivc_biginteractiveclass_string_hint_join_room_faild" translatable="false">加入房间失败</string>
+    <string name="alivc_biginteractiveclass_string_join_channel_error" translatable="false">加入房间失败，%1$s</string>
+    <string name="alivc_biginteractiveclass_string_data_parse_error" translatable="false">数据解析失败</string>
+    <string name="alivc_big_interactive_class_string_text_sub_title" translatable="false">阿里云音视频通信RTC提供基础通信服务</string>
+    <string name="alivc_biginteractiveclass_string_userinfo_empty" translatable="false">获取用户信息失败，请退出重试</string>
+    <string name="alivc_biginteractiveclass_string_loading_join_channel" translatable="false">加载中</string>
+    <string name="alivc_biginteractiveclass_string_network_conn_error" translatable="false">网络请求失败，请检查您的网络设置</string>
+    <string name="alivc_biginteractiveclass_string_hint_student_name" translatable="false">学生姓名</string>
+    <string name="alivc_biginteractiveclass_string_error_student_name_empty" translatable="false">学生姓名不能为空</string>
+    <string name="alivc_biginteractiveclass_string_set_client_student_role_success" translatable="false">下麦成功</string>
+    <string name="alivc_biginteractiveclass_string_title_channel_id" translatable="false">教室编号：%1$s</string>
+    <string name="alivc_biginteractiveclass_string_title_menu_leavel_channel" translatable="false">退出课程</string>
+    <string name="alivc_big_interactive_class_string_full_screen" translatable="false">全屏显示</string>
+    <string name="alivc_biginteractiveclass_string_leave_channel" translatable="false">退出课程</string>
+    <string name="alivc_biginteractiveclass_string_hint_leave_channel" translatable="false">您的本次课程尚未结束 确定要退出课程吗？</string>
+    <string name="alivc_biginteractiveclass_string_confirm_leave_channel" translatable="false">确认退出</string>
+    <string name="alivc_biginteractiveclass_string_continue_to_experience" translatable="false">继续体验</string>
+    <string name="alivc_biginteractiveclass_string_error_set_client_teacher_role" translatable="false">连麦失败</string>
+    <string name="alivc_biginteractiveclass_string_error_set_client_student_role" translatable="false">下麦失败</string>
+    <string name="alivc_biginteractiveclass_string_title_dialog_tip" translatable="false">提示</string>
+    <string name="alivc_biginteractiveclass_string_error_rtc_normal" translatable="false">系统错误，请点击确定退出</string>
+    <string name="alivc_biginteractiveclass_string_confrim_btn" translatable="false">确认</string>
+    <string name="alivc_biginteractiveclass_string_teacher_is_offline" translatable="false">老师未上线，请退出重试</string>
+    <string name="alivc_biginteractiveclass_string_teacher_is_leavel_room" translatable="false">老师已离开房间</string>
+    <string name="alivc_biginteractiveclass_string_need_set_teacher_role" translatable="false">连麦后开启此功能</string>
+    <string name="alivc_biginteractiveclass_string_resume">恢复</string>
+    <string name="alivc_biginteractiveclass_string_open_camera">开启</string>
+    <string name="alivc_biginteractiveclass_string_unconn_mic">下麦</string>
+    <string name="alivc_biginteractiveclass_string_mute_mic">静音</string>
+    <string name="alivc_biginteractiveclass_string_camera">摄像头</string>
+    <string name="alivc_biginteractiveclass_string_conn_mic">连麦</string>
+    <string name="alivc_biginteractiveclass_string_rotate_camera">翻转</string>
+    <string name="alivc_biginteractiveclass_string_copy_success">复制成功</string>
+    <string name="alivc_biginteractiveclass_string_copy_faild">复制失败</string>
+    <string name="alivc_biginteractiveclass_string_network_bad">网络不佳</string>
+    <string name="alivc_biginteractiveclass_string_remote_user_network_bad">对方网络不佳</string>
+    <string name="alivc_biginteractiveclass_string_rtc_network_conn_error">网络连接已断开</string>
+    <string name="alivc_biginteractiveclass_string_class_not_begin">教室码不存在，若未创建教室，请先从电脑端创建</string>
+    <string name="alivc_biginteractiveclass_string_experience_time_out">体验时间已到</string>
+    <string name="alivc_biginteractiveclass_string_experience_time_out_please_try_angin">您的本次体验时长已满\n如需再次体验，请重新创建通话</string>
+    <string name="alivc_biginteractiveclass_string_know">我知道了</string>
+    <string name="alivc_biginteractiveclass_string_publish_error">推流失败</string>
+    <string name="alivc_biginteractiveclass_string_camera_closed" translatable="false">摄像头已关闭</string>
+</resources>

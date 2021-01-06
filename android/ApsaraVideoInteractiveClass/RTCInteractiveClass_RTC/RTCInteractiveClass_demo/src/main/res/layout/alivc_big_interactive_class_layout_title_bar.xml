@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alivc_big_interactive_class_rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_centerVertical="true"
+        android:id="@+id/alivc_big_interactive_class_title_bar_ib_back"
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/aliyun_big_interactive_class_icon_back"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/alivc_big_interactive_class_ll_menu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/alivc_biginteractiveclass_margin_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/alivc_big_interactive_class_iv_icon_menu"
+            android:layout_width="@dimen/alivc_biginteractiveclass_padding_20"
+            android:layout_height="@dimen/alivc_biginteractiveclass_padding_20"/>
+
+        <TextView
+            android:visibility="gone"
+            android:textSize="@dimen/alivc_biginteractiveclass_size_text_13"
+            android:textColor="@color/alivc_biginteractiveclass_color_text_white"
+            android:id="@+id/alivc_big_interactive_class_tv_menu_name"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_toRightOf="@id/alivc_big_interactive_class_title_bar_ib_back"
+        android:layout_toLeftOf="@id/alivc_big_interactive_class_ll_menu"
+        android:id="@+id/alivc_big_interactive_class_title_bar_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/alivc_biginteractiveclass_color_text_gray"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_17" />
+</RelativeLayout>

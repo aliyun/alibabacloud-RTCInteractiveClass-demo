@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="@dimen/alivc_biginteractiveclass_width_tip_dialog_295"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_16"
+        android:id="@+id/alivc_voicecall_tv_tip_dialog_title"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_17"
+        android:gravity="center"
+        android:padding="@dimen/alivc_biginteractiveclass_margin_10"
+        android:textColor="@color/alivc_biginteractiveclass_color_text_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_margin="@dimen/alivc_biginteractiveclass_margin_6"
+        android:id="@+id/alivc_voicecall_tv_tip_dialog_des"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_15"
+        android:gravity="center"
+        android:padding="@dimen/alivc_biginteractiveclass_margin_10"
+        android:textColor="@color/alivc_biginteractiveclass_color_des_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/alivc_biginteractiveclass_color_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_biginteractiveclass_line_1px"/>
+
+    <LinearLayout
+        android:id="@+id/alivc_voicecall_ll_two_btn_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_btn_layout_50">
+
+        <Button
+            android:id="@+id/alivc_voicecall_btn_tip_dialog_cancel"
+            android:textSize="@dimen/alivc_biginteractiveclass_size_text_18"
+            android:gravity="center"
+            android:textColor="@color/alivc_biginteractiveclass_color_cancel_btn_gray"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/alivc_voicecall_btn_tip_dialog_confirm"
+            android:textSize="@dimen/alivc_biginteractiveclass_size_text_18"
+            android:textColor="@color/alivc_biginteractiveclass_color_btn_enable_blue"
+            android:gravity="center"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/alivc_common_dialog_tip_dialog_one_btn"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_18"
+        android:textColor="@color/alivc_biginteractiveclass_color_btn_enable_blue"
+        android:gravity="center"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_btn_layout_50"/>
+</LinearLayout>

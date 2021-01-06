@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/alivc_biginteractiveclass_padding_20"
+    android:paddingRight="@dimen/alivc_biginteractiveclass_padding_20"
+    android:paddingBottom="@dimen/alivc_biginteractiveclass_margin_10"
+    android:paddingTop="@dimen/alivc_biginteractiveclass_margin_10"
+    android:id="@+id/alivc_voicecall_tv_toast"
+    android:background="@drawable/alivc_biginteractiveclass_bg_toast_shape"
+    android:layout_width="match_parent"
+    android:textSize="@dimen/alivc_biginteractiveclass_size_text_14"
+    android:textColor="@color/alivc_biginteractiveclass_color_text_white"
+    android:layout_height="match_parent"/>

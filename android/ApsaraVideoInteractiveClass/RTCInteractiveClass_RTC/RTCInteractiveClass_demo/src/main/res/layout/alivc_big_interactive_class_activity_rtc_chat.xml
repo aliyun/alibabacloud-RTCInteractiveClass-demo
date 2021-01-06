@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/alivc_big_interactive_class_rl_content_class_room"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_biginteractiveclass_color_room_background">
+
+    <FrameLayout
+        android:id="@+id/alivc_big_interactive_class_fl_Container"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_margintop_160"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_vedio_280">
+
+    </FrameLayout>
+
+    <SurfaceView
+        android:id="@+id/alivc_big_interactive_class_surface_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/alivc_big_interactive_class_iv_icon_class_not_begin"
+        android:scaleType="centerInside"
+        android:background="@drawable/alivc_biginteractiveclass_class_not_begin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/alivc_big_interactive_class_ll_full_screen"
+        android:layout_width="@dimen/alivc_biginteractiveclass_width_full_screen_ll_120"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_full_screen_ll_34dp"
+        android:layout_below="@id/alivc_big_interactive_class_fl_Container"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/alivc_biginteractiveclass_bg_full_screen_bg"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_padding_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/alivc_biginteractiveclass_margin_16"
+            android:src="@mipmap/alivc_big_interactive_class_icon_mine_setting"
+            android:layout_width="@dimen/alivc_biginteractiveclass_margin_16"
+            android:layout_height="@dimen/alivc_biginteractiveclass_margin_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alivc_biginteractiveclass_size_text_14"
+            android:background="@color/alivc_biginteractiveclass_color_full_screen_bg"
+            android:text="@string/alivc_big_interactive_class_string_full_screen"
+            android:textColor="@color/alivc_biginteractiveclass_color_text_white" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_width_selector_40"
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_marginRight="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_below="@id/alivc_big_interactive_class_ll_full_screen"
+        android:id="@+id/alivc_big_interactive_class_rcy_student_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_margin_10"
+        android:layout_marginRight="@dimen/alivc_biginteractiveclass_margin_10"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/alivc_big_interactive_class_rcy_function_views"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
