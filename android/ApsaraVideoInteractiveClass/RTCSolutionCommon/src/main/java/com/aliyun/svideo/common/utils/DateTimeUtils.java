@@ -62,5 +62,11 @@ public class DateTimeUtils {
         return simpleDateFormat.format(date);
     }
 
+    public static String getDateTimeFromMD(Long millisecond) {
+        @SuppressLint("SimpleDateFormat")
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM-dd HH:mm");
+        Date date = new Date(millisecond);
+        return simpleDateFormat.format(date);
+    }
 
 }

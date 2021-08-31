@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('xlite-1.0.2.9.aar'))

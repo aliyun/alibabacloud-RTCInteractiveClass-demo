@@ -24,7 +24,8 @@ import java.lang.reflect.Field;
  */
 public class ToastUtils {
 
-    private static Toast mToast;
+    private static Toast mViewToast;
+    private static Toast mCommonToast;
     private static Field mFieldTN;
     private static Field mFieldTNHandler;
 
@@ -50,19 +51,33 @@ public class ToastUtils {
      * @return Toast
      */
     @SuppressLint("ShowToast")
-    private static Toast initToast(Context context) {
-        if (mToast == null) {
+    private static Toast initViewToast(Context context) {
+        if (mViewToast == null) {
             synchronized (ToastUtils.class) {
-                if (mToast == null) {
-                    mToast = Toast.makeText(context.getApplicationContext(), "", Toast.LENGTH_SHORT);
+                if (mViewToast == null) {
+                    mViewToast = Toast.makeText(context.getApplicationContext(), "", Toast.LENGTH_SHORT);
                     if (Build.VERSION.SDK_INT == 25) {
-                        hook(mToast);
+                        hook(mViewToast);
                     }
                     initToastView(context);
                 }
             }
         }
-        return mToast;
+        return mViewToast;
+    }
+    @SuppressLint("ShowToast")
+    private static Toast initCommonToast(Context context) {
+        if (mCommonToast == null) {
+            synchronized (ToastUtils.class) {
+                if (mCommonToast == null) {
+                    mCommonToast = Toast.makeText(context.getApplicationContext(), "", Toast.LENGTH_SHORT);
+                    if (Build.VERSION.SDK_INT == 25) {
+                        hook(mViewToast);
+                    }
+                }
+            }
+        }
+        return mCommonToast;
     }
 
     /**
@@ -74,7 +89,7 @@ public class ToastUtils {
             synchronized (ToastUtils.class) {
                 if (view == null) {
                     view = (TextView) LayoutInflater.from(context).inflate(R.layout.alirtc_common_layout_toast, null);
-                    mToast.setView(view);
+                    mViewToast.setView(view);
                 }
             }
         }
@@ -86,12 +101,12 @@ public class ToastUtils {
      * @param context Context
      * @param content 显示内容
      */
-    public static synchronized void showInCenter(Context context, String content) {
-        initToast(context);
-        mToast.cancel();
+    public static void showInCenter(Context context, String content) {
+        initViewToast(context);
+        mViewToast.cancel();
         view.setText(content);
-        mToast.setDuration(Toast.LENGTH_SHORT);
-        mToast.setGravity(Gravity.CENTER, 0, 0);
+        mViewToast.setDuration(Toast.LENGTH_SHORT);
+        mViewToast.setGravity(Gravity.CENTER, 0, 0);
         ThreadUtils.runOnUiThread(new ShowToastRunnable(), 100);
     }
 
@@ -125,11 +140,10 @@ public class ToastUtils {
      * @param duration {@link Toast#LENGTH_SHORT},{@link Toast#LENGTH_LONG}
      */
     public static void show(Context context, String message, int duration) {
-
-        Toast toast = initToast(context);
-        toast.setDuration(duration);
-        toast.setText(message);
-        mToast.show();
+        initCommonToast(context);
+        mCommonToast.cancel();
+        mCommonToast.setText(message);
+        ThreadUtils.runOnUiThread(new ShowToastRunnable(),100);
     }
 
     /**
@@ -141,10 +155,10 @@ public class ToastUtils {
      */
     public static void show(Context context, int stringId, int duration) {
 
-        Toast toast = initToast(context);
-        toast.setDuration(duration);
-        toast.setText(stringId);
-        mToast.show();
+        initCommonToast(context);
+        mCommonToast.cancel();
+        mCommonToast.setText(stringId);
+        ThreadUtils.runOnUiThread(new ShowToastRunnable(),100);
     }
 
     /**
@@ -156,11 +170,11 @@ public class ToastUtils {
      */
     public static void show(Context context, String message, int gravity, int duration) {
 
-        Toast toast = initToast(context);
-        toast.setDuration(duration);
-        toast.setText(message);
-        toast.setGravity(gravity, 0, 0);
-        mToast.show();
+        initCommonToast(context);
+        mCommonToast.cancel();
+        mCommonToast.setText(message);
+        mCommonToast.setGravity(gravity, 0, 0);
+        ThreadUtils.runOnUiThread(new ShowToastRunnable(),100);
     }
 
 
@@ -208,15 +222,21 @@ public class ToastUtils {
     private static class ShowToastRunnable implements Runnable {
         @Override
         public void run() {
-            if (mToast != null) {
-                mToast.show();
+            if (mViewToast != null) {
+                mViewToast.show();
+            }
+            if (mCommonToast != null) {
+                mCommonToast.show();
             }
         }
     }
 
     public static void cancel() {
-        if (mToast != null) {
-            mToast.cancel();
+        if (mViewToast != null) {
+            mViewToast.cancel();
+        }
+        if (mCommonToast != null) {
+            mCommonToast.cancel();
         }
     }
 }

@@ -1,0 +1,62 @@
+// Copyright (c) 2019 The Alibaba DingTalk Authors. All rights reserved.// DPS_Bridging_Header.h
+// DPS_Bridging_Header
+
+#import <Foundation/Foundation.h>
+
+//! Project version number for DPSBridgingHeader.
+FOUNDATION_EXPORT double DPSBridgingHeaderVersionNumber;
+
+//! Project version string for DPSBridgingHeader.
+FOUNDATION_EXPORT const unsigned char DPSBridgingHeaderVersionString[];
+
+#import "DPSAuthHandler.h"
+#import "DPSAuthListener.h"
+#import "DPSAuthService.h"
+#import "DPSAuthToken.h"
+#import "DPSAuthTokenExpiredReason.h"
+#import "DPSAuthTokenGotCallback.h"
+#import "DPSConnectionStatus.h"
+#import "DPSConnectionType.h"
+#import "DPSEngineStartListener.h"
+#import "DPSEnvType.h"
+#import "DPSErrClientCode.h"
+#import "DPSErrDomain.h"
+#import "DPSError.h"
+#import "DPSKickoutListener.h"
+#import "DPSLogHandler.h"
+#import "DPSLogLevel.h"
+#import "DPSLogoutListener.h"
+#import "DPSMediaHost.h"
+#import "DPSMediaHostType.h"
+#import "DPSModuleEventHandler.h"
+#import "DPSModuleEventHandlerCallback.h"
+#import "DPSModuleInfo.h"
+#import "DPSNetType.h"
+#import "DPSPubAuthTokenCallback.h"
+#import "DPSPubEngine.h"
+#import "DPSPubEngineListener.h"
+#import "DPSPubManager.h"
+#import "DPSPubManagerCreateListener.h"
+#import "DPSPubSettingService.h"
+#import "DPSPushAckStatus.h"
+#import "DPSPushListener.h"
+#import "DPSReleaseManagerListener.h"
+#import "DPSResetUserDataListener.h"
+#import "DPSRpcDataType.h"
+#import "DPSRpcDataTypeMap.h"
+#import "DPSRpcRequestHeader.h"
+#import "DPSRpcRequestListener.h"
+#import "DPSRpcService.h"
+#import "DPSServiceProvider.h"
+#import "DPSSyncData.h"
+#import "DPSSyncDataExtend.h"
+#import "DPSSyncPlusAck.h"
+#import "DPSSyncPlusBizEventListener.h"
+#import "DPSSyncPlusPackageDataHandler.h"
+#import "DPSSyncPlusTopicEventListener.h"
+#import "DPSSyncProtocolInfo.h"
+#import "DPSSyncProtocolType.h"
+#import "DPSSyncService.h"
+#import "DPSUserId.h"
+#import "DPSUtListener.h"
+#import "DPSUtService.h"

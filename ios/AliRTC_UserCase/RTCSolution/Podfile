@@ -1,0 +1,50 @@
+# Uncomment the next line to define a global platform for your project
+
+platform :ios, '9.0'
+# source 'https://github.com/CocoaPods/Specs.git'
+
+target 'RTCSolution' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  #   use_frameworks!
+  
+  # Pods for RTCSolution
+  
+  pod 'libdps', :path => 'AIMSDK-3.0.0.23/'
+  pod 'libaim', :path => 'AIMSDK-3.0.0.23/'
+  pod 'gaea', :path => 'AIMSDK-3.0.0.23/'
+  pod 'dmojo_support', :path => 'AIMSDK-3.0.0.23/'
+  pod 'xlite', :path => 'AIMSDK-3.0.0.23/'
+  pod 'OpenSSL', :path => 'AIMSDK-3.0.0.23/'
+  
+  
+  pod 'ALiIM', :path => '../ALiIM'
+  
+  pod 'RTCCommon', :path => '../RTCCommon'
+  
+  pod 'RTCCommonView', :path => '../RTCCommonView'
+  
+  
+  #RTC版本
+  pod 'RTCInteractiveLiveClass', :path => '../RTCInteractiveLiveClass-RTC'
+  
+  
+ 
+#  pod 'RTCBeaconTower', :path => '../RTCBeaconTower'
+
+#  pod 'RTCWatchTogether', :path => '../RTCWatchTogether'
+
+#end
+
+ pod 'AliRTCSdk',        :path => 'AliRtcSDK_iOS'
+ pod 'AFNetworking',        :path => 'AFNetworking'
+
+#  pod 'AliPlayerSDK_iOS', :path => 'AliPlayerSDK_iOS'
+# pod 'AFNetworking',     :git => 'https://github.com/AFNetworking/AFNetworking.git',  :tag=>'4.0.1'
+
+# pod 'MJExtension',   :git => 'https://github.com/CoderMJLee/MJExtension.git',  :tag=>'3.3.0'
+
+#  pod 'JXCategoryView',   :git => 'https://github.com/pujiaxin33/JXCategoryView.git',  :tag=>'1.5.6'
+# pod "MBProgressHUD",    :source => 'https://github.com/CocoaPods/Specs.git'
+
+end
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="86dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/left_card_view"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:gravity="center"
+        app:cardBackgroundColor="@color/alivc_common_bg_white_f7f7f7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:background="@drawable/alivc_biginteractiveclass_student_avatar_bg" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/alivc_big_interactive_class_rl_student_preview_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/alivc_big_interactive_class_tv_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/alivc_biginteractiveclass_item_nomal_teacher_text_bg"
+                android:ellipsize="end"
+                android:paddingStart="4dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="2dp"
+                android:text="自己"
+                android:textColor="@color/alivc_biginteractiveclass_color_365AFF"
+                android:textSize="@dimen/alivc_biginteractiveclass_size_text_12"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/alivc_big_interactive_class_iv_student_mutecamera"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/alivc_big_interactive_class_iv_student_mutecamera">
+
+                <TextView
+                    android:id="@+id/alivc_big_interactive_class_tv_student_display_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/alivc_biginteractiveclass_item_nomal_student_text_bg"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:paddingStart="4dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/alivc_biginteractiveclass_color_text_333333"
+                    android:textSize="@dimen/alivc_biginteractiveclass_size_text_12"
+                    tools:text="田柳田柳" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/alivc_big_interactive_class_iv_student_mutecamera"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/alivc_biginteractiveclass_mute_camera_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/alivc_big_interactive_class_iv_student_mutemic" />
+
+            <ImageView
+                android:id="@+id/alivc_big_interactive_class_iv_student_mutemic"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/alivc_biginteractiveclass_mute_mic_selector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageView
+                android:id="@+id/alivc_big_interactive_class_iv_student_handUp"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/alivc_biginteractiveclass_student_apply_call"
+                android:visibility="gone"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

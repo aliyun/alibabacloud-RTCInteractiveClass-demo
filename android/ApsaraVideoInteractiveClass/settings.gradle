@@ -1,4 +1,17 @@
 include ':app'
 include ':RTCSolutionCommon'
+include ':AliRTCSdk'
 include ':RTCViewCommon'
-include ':RTCInteractiveClass_RTC:RTCInteractiveClass_demo'
+include ':aim'
+include ':dmojo'
+include ':dps'
+include ':gaea'
+include ':openssl'
+include ':xlite'
+include ':RTCInteractiveClass_RTC:RTCIMInteractiveClass_demo'
+project(':aim').projectDir = new File('IM/aim-3.0.0.20')
+project(':dmojo').projectDir = new File('IM/dmojo_support-1.0.1.12')
+project(':dps').projectDir = new File('IM/dps-3.0.0.16')
+project(':gaea').projectDir = new File('IM/gaea-2.1.0.2-cloud')
+project(':openssl').projectDir = new File('IM/openssl-1.1.1-ant')
+project(':xlite').projectDir = new File('IM/xlite-1.0.2.9-20191219.170828-1')

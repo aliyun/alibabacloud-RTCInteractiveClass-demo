@@ -42,7 +42,11 @@
     <color name="alivc_common_bg_white_alpha_40">#66ffffff</color>
     <color name="alivc_common_bg_white_alpha_50">#7FFFFFFF</color>
     <color name="alivc_common_bg_white_alpha_60">#99FFFFFF</color>
+    <color name="alivc_common_bg_white_alpha_80">#33EAEEFF</color>
     <color name="alivc_common_bg_white_bright">#fff1f1f1</color>
+    <color name="alivc_common_bg_white_f7f7f7">#F7F7F7</color>
+    <color name="alivc_common_bg_white_90">#26ffffff</color>
+
     <color name="alivc_common_bg_gray_darker">#aaa</color>
     <color name="alivc_common_bg_gray_light">#C3C5C6</color>
     <color name="alivc_common_bg_gray_bright">#D8D8D8</color>

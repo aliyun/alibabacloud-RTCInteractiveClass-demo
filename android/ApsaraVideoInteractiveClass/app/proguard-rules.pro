@@ -19,3 +19,12 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-dontwarn com.tencent.bugly.**
+-keep public class com.tencent.bugly.**{*;}
+
+# IM配置
+-keep class com.alibaba.dingpaas.** { *; }
+-keep class com.alipay.mars.** { *; }
+-keep class com.alipay.bifrost.** { *; }
+-keep class com.alipay.mobile.** { *; }
+-keep class org.android.spdy.** { *; }

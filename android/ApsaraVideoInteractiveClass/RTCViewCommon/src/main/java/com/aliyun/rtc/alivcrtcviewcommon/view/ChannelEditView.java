@@ -94,6 +94,11 @@ public class ChannelEditView extends android.support.v7.widget.AppCompatEditText
         mErrorColorBottomLine = errorColorBottomLine;
     }
 
+   public void setColor(int color){
+       mTextColor = color;
+       invalidate();
+   }
+
     private void initLines() {
         points = new float[4 * maxLenght];
         marginLfet = DensityUtils.dip2px(getContext(), 6);
@@ -210,6 +215,7 @@ public class ChannelEditView extends android.support.v7.widget.AppCompatEditText
             this.mCursorColor = getResources().getColor(cursorColor);
         }
     }
+
 
 
     private static class MyHandler extends Handler{

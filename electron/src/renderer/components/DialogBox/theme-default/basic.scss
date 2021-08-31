@@ -1,0 +1,23 @@
+.myDialog .el-dialog__header {
+  padding-top: 10px;
+  border-bottom: 1px solid #dedede;
+}
+.myDialog .el-dialog__headerbtn {
+  top: 10px;
+  right: 10px;
+}
+.myDialog .el-dialog__headerbtn i{
+  font-size: 24px;
+  font-weight: 500;
+}
+.myDialog .el-dialog__title {
+  font-size: 14px;
+  color: #111111;
+  font-weight: 800;
+  display: inline-block;
+}
+.myDialog .el-dialog__body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+}

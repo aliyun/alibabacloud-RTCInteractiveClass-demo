@@ -18,7 +18,11 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
-        mHandler.postDelayed(new JumpActivityRunnable(SplashActivity.this), 2000);
+        if (!this.isTaskRoot()){
+            finish();
+            return;
+        }
+        mHandler.postDelayed(new JumpActivityRunnable(SplashActivity.this), 1000);
     }
 
     @Override

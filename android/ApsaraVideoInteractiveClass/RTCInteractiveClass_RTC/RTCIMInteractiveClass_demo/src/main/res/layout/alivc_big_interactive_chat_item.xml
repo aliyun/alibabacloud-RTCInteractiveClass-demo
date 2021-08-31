@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/student_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alivc_common_margin_16"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_12"
+        android:textColor="#888888"
+        android:textSize="@dimen/alivc_common_font_10"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="学生A" />
+
+    <TextView
+        android:id="@+id/alivc_big_interactive_class_dialog_teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/alivc_biginteractiveclass_item_nomal_teacher_text_red_bg"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="2dp"
+        android:text="教师"
+        android:textColor="#E80320"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_12"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/student_name_tv"
+        app:layout_constraintLeft_toRightOf="@+id/student_name_tv"
+        app:layout_constraintTop_toTopOf="@+id/student_name_tv" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alivc_common_margin_4"
+        android:gravity="left"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_name_tv">
+
+        <TextView
+            android:id="@+id/chat_student_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/alivc_common_margin_16"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/alivc_biginteractiveclass_chat_remote_bg"
+            android:gravity="center"
+            android:padding="4dp"
+            android:ellipsize="end"
+            android:textColor="@color/alivc_common_font_gray_333333"
+            android:textSize="@dimen/alivc_common_font_12"
+            android:visibility="visible"
+            tools:text="老师老师老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好老师老师好好好好" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/local_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alivc_common_margin_16"
+        android:layout_marginEnd="8dp"
+        android:textColor="#888888"
+        android:textSize="@dimen/alivc_common_font_10"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/alivc_big_interactive_class_tv_student_name"
+        app:layout_constraintRight_toLeftOf="@+id/alivc_big_interactive_class_tv_student_name"
+        app:layout_constraintTop_toTopOf="@+id/alivc_big_interactive_class_tv_student_name"
+        app:layout_goneMarginEnd="16dp"
+        tools:text="学生B" />
+
+
+    <TextView
+        android:id="@+id/alivc_big_interactive_class_tv_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/alivc_biginteractiveclass_margin_16"
+        android:background="@drawable/alivc_biginteractiveclass_item_nomal_teacher_text_bg"
+        android:ellipsize="end"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="2dp"
+        android:text="自己"
+        android:textColor="@color/alivc_biginteractiveclass_color_365AFF"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_12"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/student_name_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/student_name_tv" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alivc_common_margin_4"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/local_name_tv">
+
+        <TextView
+            android:id="@+id/chat_local_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="@dimen/alivc_common_margin_16"
+            android:background="@drawable/alivc_biginteractiveclass_chat_local_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="@color/alivc_common_white"
+            android:textSize="@dimen/alivc_common_font_12"
+            android:visibility="invisible"
+            tools:text="老师好！！" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

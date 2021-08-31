@@ -5,11 +5,11 @@ apply plugin: 'com.android.application'
             buildToolsVersion '29.0.0'
         
             defaultConfig {
-                applicationId "com.aliyun.experience.RTCSolution"
-                minSdkVersion 16
+                applicationId "com.aliyun.rtc.rtcinteractiveclass"
+                minSdkVersion 19
                 targetSdkVersion 29
-                versionCode 100
-                versionName "1.0.0"
+                versionCode 510
+                versionName "5.1.0"
         
                 testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
                 ndk {
@@ -19,17 +19,25 @@ apply plugin: 'com.android.application'
         
             signingConfigs {
                 debug {
+                    storeFile file("/home/admin/.emas/build/15126532/workspace/debug.keystore")
+                    storePassword "android"
+                    keyAlias "androiddebugkey"
+                    keyPassword "android"
                 }
-        
+
                 release {
+                    storeFile file("/home/admin/.emas/build/15126532/workspace/debug.keystore")
+                    storePassword "android"
+                    keyAlias "androiddebugkey"
+                    keyPassword "android"
                 }
             }
-
+            
             buildTypes {
                 release {
                     debuggable true
                     multiDexEnabled true
-                    minifyEnabled true
+                    minifyEnabled false
                     signingConfig signingConfigs.release
                     proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
                 }
@@ -56,14 +64,12 @@ apply plugin: 'com.android.application'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project (':RTCSolutionCommon')
-    implementation project (':RTCInteractiveClass_RTC:RTCInteractiveClass_demo')
+    implementation project (':RTCInteractiveClass_RTC:RTCIMInteractiveClass_demo')
     implementation externalAndroidAppCompatV7
     implementation externalAndroidSupportV4
     implementation externalAndroidRecyclerView
     implementation externalGSON
     implementation externalOKHTTP
-    implementation externalAndroidMultiDex
-    implementation  'com.umeng.umsdk:analytics:8.0.0'
-    implementation  'com.umeng.umsdk:common:2.0.0'
-    
+    implementation externalAndroidMultiDex    
+    implementation externalBugly
 }

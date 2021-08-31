@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_common_white"
+    tools:context=".ui.AlivcFeedbackActivity">
+
+    <ImageView
+        android:id="@+id/alivc_big_interactive_class_iv_back"
+        android:layout_width="@dimen/alivc_biginteractiveclass_height_titlebar_24"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_titlebar_24"
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_36"
+        android:src="@drawable/back"
+        android:onClick="endFeedBackOnclick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/feedback_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alivc_biginteractiveclass_drawing_board"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feedback_end_class_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课程已结束"
+        android:textColor="@color/alivc_common_font_gray_333333"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_logo_iv" />
+
+    <TextView
+        android:id="@+id/feedback_teacher_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alivc_common_margin_6"
+        android:text="教师: 王老师"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_end_class_tv" />
+
+    <TextView
+        android:id="@+id/feedback_class_start_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/alivc_common_margin_4"
+        android:text="01-15 16:21"
+        android:textColor="@color/alivc_common_font_gray_333333"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_class_start_time_tag_tv"
+        app:layout_constraintLeft_toLeftOf="@id/feedback_class_start_time_tag_tv"
+        app:layout_constraintRight_toRightOf="@+id/feedback_class_start_time_tag_tv" />
+
+    <TextView
+        android:id="@+id/feedback_class_start_time_tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="72dp"
+        android:text="开始时间"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feedback_teacher_name_tv" />
+
+    <TextView
+        android:id="@+id/feedback_class_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/alivc_common_margin_4"
+        android:text="01:21:56"
+        android:textColor="@color/alivc_common_font_gray_333333"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_class_time_tag_tv"
+        app:layout_constraintLeft_toLeftOf="@id/feedback_class_time_tag_tv"
+        app:layout_constraintRight_toRightOf="@+id/feedback_class_time_tag_tv" />
+
+    <TextView
+        android:id="@+id/feedback_class_time_tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="52dp"
+        android:text="课程时长"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feedback_teacher_name_tv" />
+
+    <TextView
+        android:id="@+id/feedback_online_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/alivc_common_margin_4"
+        android:text="56"
+        android:textColor="@color/alivc_common_font_gray_333333"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_online_num_tag_tv"
+        app:layout_constraintLeft_toLeftOf="@id/feedback_online_num_tag_tv"
+        app:layout_constraintRight_toRightOf="@+id/feedback_online_num_tag_tv" />
+
+    <TextView
+        android:id="@+id/feedback_online_num_tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="54dp"
+        android:text="在线人数"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feedback_class_start_time_tag_tv" />
+
+    <TextView
+        android:id="@+id/feedback_seat_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/alivc_common_margin_4"
+        android:text="6"
+        android:textColor="@color/alivc_common_font_gray_333333"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_seat_num_tag_tv"
+        app:layout_constraintLeft_toLeftOf="@id/feedback_seat_num_tag_tv"
+        app:layout_constraintRight_toRightOf="@+id/feedback_seat_num_tag_tv" />
+
+    <TextView
+        android:id="@+id/feedback_seat_num_tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="52dp"
+        android:text="连麦人数"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feedback_class_start_time_tag_tv" />
+
+
+</android.support.constraint.ConstraintLayout>

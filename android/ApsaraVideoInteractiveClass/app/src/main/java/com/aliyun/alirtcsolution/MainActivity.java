@@ -12,23 +12,23 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.aliyun.rtc.rtcinteractiveclassplayer.ui.AlivcJoinChannelActivity;
-
+import com.aliyun.rtc.rtcinteractiveclass.ui.AlivcRtcJoinChannelActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView mRcyModelList;
     private int[] mModelIconList = new int[]{
-           R.drawable.icon_video_live_room
+            R.drawable.icon_interactive_class
     };
 
     private int[] mModelNameList = new int[]{
-            R.string.string_interactive_class_name
+            R.string.string_interactive_rtc_class_name
     };
 
     private Class[] mModelMainActivitys = new Class[]{
-            AlivcJoinChannelActivity.class,
+            AlivcRtcJoinChannelActivity.class,
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         initView();
     }
 
-    private void initView(){
+    private void initView() {
         mRcyModelList = findViewById(R.id.rcy_model_list);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         gridLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         private class ModelViewHolder extends RecyclerView.ViewHolder {
             ImageView ivModelIcon;
             TextView tvModelName;
+
             public ModelViewHolder(View view) {
                 super(view);
                 ivModelIcon = view.findViewById(R.id.iv_model_icon);
@@ -72,8 +73,15 @@ public class MainActivity extends AppCompatActivity {
             }
 
             public void bindView(final int position) {
-                ivModelIcon.setImageResource(mModelIconList[position]);
-                tvModelName.setText(getString(mModelNameList[position]));
+                if (ivModelIcon != null) {
+                    ivModelIcon.setImageResource(mModelIconList[position]);
+                }
+                if (tvModelName != null) {
+                    tvModelName.setText(getString(mModelNameList[position]));
+                }
+                if (itemView == null) {
+                    return;
+                }
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

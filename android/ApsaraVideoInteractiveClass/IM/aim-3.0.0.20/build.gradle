@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('aim-3.0.0.23.aar'))

@@ -2,12 +2,11 @@
 
 buildscript {
     repositories {
-        google()
-        jcenter()
         maven { url "http://maven.aliyun.com/nexus/content/repositories/releases" }
         maven { url 'https://maven.aliyun.com/repository/releases' }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
-
+        jcenter()
+        google()
     }
     apply from: 'thirdparty-lib/config.gradle'
     dependencies {
@@ -21,13 +20,13 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
-        jcenter()
         maven { url "http://maven.aliyun.com/nexus/content/repositories/releases" }
         maven { url 'http://mvnrepo.alibaba-inc.com/mvn/repository' }
         maven { url 'https://dl.bintray.com/umsdk/release' }
         maven { url 'https://maven.aliyun.com/repository/releases' }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        jcenter()
+        google()
         flatDir { dirs 'src/main/libs' }
     }
 

@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion externalCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion externalMinSdkVersion
+        targetSdkVersion externalTargetSdkVersion
+        consumerProguardFiles 'proguard-rules.pro'
+        ndk {
+            abiFilters  "armeabi", "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation externalAndroidAppCompatV7
+    implementation externalAndroidSupportV13
+    implementation externalAndroidSupportV4
+    implementation externalAndroidDesign
+    implementation externalAndroidConstraint
+    implementation externalAndroidRecyclerView
+    implementation externalGSON
+    implementation externalOKHTTP
+    implementation project(path: ':AliRTCSdk')
+    implementation externalAndroidCardView
+
+    implementation project(path: ':RTCSolutionCommon')
+    implementation project(path: ':RTCViewCommon')
+    implementation project(path: ':aim')
+    implementation project(path: ':dmojo')
+    implementation project(path: ':dps')
+    implementation project(path: ':gaea')
+    implementation project(path: ':openssl')
+    implementation project(path: ':xlite')
+}

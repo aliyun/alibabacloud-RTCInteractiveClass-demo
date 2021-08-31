@@ -1,0 +1,15 @@
+import Vue from "vue";
+import MessageBox from '../../lib/messagebox';
+import Message from '../../lib/message';
+import CodeInput from '../../lib/codeinput';
+import NameInput from '../../lib/nameinput';
+import Button from '../../lib/button';
+import {Option,Select} from '../../lib/index';
+Vue.use(Button);
+Vue.use(CodeInput);
+Vue.use(NameInput);
+Vue.use(Option);
+Vue.use(Select);
+Vue.prototype.$myMessage=Message;
+Vue.prototype.$myAlert=MessageBox.alert;
+Vue.prototype.$myConfirm=MessageBox.confirm;

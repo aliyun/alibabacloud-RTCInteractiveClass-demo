@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">音视频通信</string>
+    <string name="app_name">阿里云 AliRTC</string>
     <string name="string_voice_call_solo_name">一对一语聊</string>
+    <string name="string_interactive_rtc_class_name">互动大班课-RTC</string>
     <string name="string_interactive_class_name">互动大班课</string>
     <string name="string_audio_live_room_name">语音聊天室</string>
-    <string name="string_video_live_room_name">视频直播连麦</string>
+    <string name="string_video_live_room_name">视频互动直播</string>
+    <string name="string_super_class_name">超级小班课</string>
+    <string name="string_yd_video_live_room_name">伊对多人视频连麦</string>
+    <string name="string_beanco_tower_name">音视频通话</string>
     <string name="string_sub_title">阿里云音视频通信RTC提供基础通信服务</string>
 </resources>

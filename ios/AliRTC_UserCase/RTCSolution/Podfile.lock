@@ -1,0 +1,136 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - ALiIM (0.1.0):
+    - ALiIM/AIM (= 0.1.0)
+  - ALiIM/AIM (0.1.0):
+    - dmojo_support
+    - gaea
+    - libaim
+    - libdps
+    - Masonry
+    - OpenSSL
+    - xlite
+  - AliRTCSdk (2.5.1.2107290130181):
+    - AliRTCSdk/AliRTCSdk (= 2.5.1.2107290130181)
+  - AliRTCSdk/AliRTCSdk (2.5.1.2107290130181)
+  - dmojo_support (1.0.1.12)
+  - gaea (2.1.0.2)
+  - libaim (3.0.0.23)
+  - libdps (3.0.0.20)
+  - Masonry (1.1.0)
+  - OpenSSL (1.1.1)
+  - RTCCommon (0.1.0):
+    - RTCCommon/Color (= 0.1.0)
+    - RTCCommon/Image (= 0.1.0)
+    - RTCCommon/Network (= 0.1.0)
+  - RTCCommon/Color (0.1.0)
+  - RTCCommon/Image (0.1.0)
+  - RTCCommon/Network (0.1.0):
+    - AFNetworking
+  - RTCCommonView (0.1.0):
+    - RTCCommon
+    - RTCCommonView/Alert (= 0.1.0)
+    - RTCCommonView/CodeView (= 0.1.0)
+    - RTCCommonView/HUD (= 0.1.0)
+    - RTCCommonView/LoadingButton (= 0.1.0)
+    - RTCCommonView/OffLine (= 0.1.0)
+    - RTCCommonView/Utils (= 0.1.0)
+  - RTCCommonView/Alert (0.1.0):
+    - RTCCommon
+  - RTCCommonView/CodeView (0.1.0):
+    - RTCCommon
+  - RTCCommonView/HUD (0.1.0):
+    - RTCCommon
+  - RTCCommonView/LoadingButton (0.1.0):
+    - RTCCommon
+  - RTCCommonView/OffLine (0.1.0):
+    - RTCCommon
+  - RTCCommonView/Utils (0.1.0):
+    - RTCCommon
+  - RTCInteractiveLiveClass (0.1.0):
+    - AliRTCSdk
+    - RTCCommon
+    - RTCInteractiveLiveClass/iOS (= 0.1.0)
+  - RTCInteractiveLiveClass/iOS (0.1.0):
+    - ALiIM
+    - AliRTCSdk
+    - RTCCommon
+    - RTCCommonView (~> 0.1.0)
+  - xlite (1.0.2.9)
+
+DEPENDENCIES:
+  - AFNetworking (from `AFNetworking`)
+  - ALiIM (from `../ALiIM`)
+  - AliRTCSdk (from `AliRtcSDK_iOS`)
+  - dmojo_support (from `AIMSDK-3.0.0.23/`)
+  - gaea (from `AIMSDK-3.0.0.23/`)
+  - libaim (from `AIMSDK-3.0.0.23/`)
+  - libdps (from `AIMSDK-3.0.0.23/`)
+  - OpenSSL (from `AIMSDK-3.0.0.23/`)
+  - RTCCommon (from `../RTCCommon`)
+  - RTCCommonView (from `../RTCCommonView`)
+  - RTCInteractiveLiveClass (from `../RTCInteractiveLiveClass-RTC`)
+  - xlite (from `AIMSDK-3.0.0.23/`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  AFNetworking:
+    :path: AFNetworking
+  ALiIM:
+    :path: "../ALiIM"
+  AliRTCSdk:
+    :path: AliRtcSDK_iOS
+  dmojo_support:
+    :path: AIMSDK-3.0.0.23/
+  gaea:
+    :path: AIMSDK-3.0.0.23/
+  libaim:
+    :path: AIMSDK-3.0.0.23/
+  libdps:
+    :path: AIMSDK-3.0.0.23/
+  OpenSSL:
+    :path: AIMSDK-3.0.0.23/
+  RTCCommon:
+    :path: "../RTCCommon"
+  RTCCommonView:
+    :path: "../RTCCommonView"
+  RTCInteractiveLiveClass:
+    :path: "../RTCInteractiveLiveClass-RTC"
+  xlite:
+    :path: AIMSDK-3.0.0.23/
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  ALiIM: 17085c6c81107cecf5a090e9b0dd4bb3c5e90e99
+  AliRTCSdk: 87cd00688a4659e27c7bae12b07525cfde838591
+  dmojo_support: 74c822b5749e7ce800669132f9e0d46c94cd80cc
+  gaea: f376b9b9e53a12fd78a087e038af1e50d793300a
+  libaim: ee511a2838d292df187a5fc2fa8a1c35759ac761
+  libdps: cdceddc0232bca83bced4931e1b0b4f45b56e869
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OpenSSL: 4f4110083609e5cec22f51d488fc85e943ee25e6
+  RTCCommon: e06d160cc224b8ca04224d35f1305d120344d177
+  RTCCommonView: 6910b64b68ee2171cb6b04eabb9b67fbb0042429
+  RTCInteractiveLiveClass: 53c874a438d8f3197f79d1ac11642e4f71487dea
+  xlite: 7dab59dc0da3a0de03ba207ffc986660766554e8
+
+PODFILE CHECKSUM: a03e4ddb4bf9880db060d81ff3640d5fcce6d2b1
+
+COCOAPODS: 1.10.1

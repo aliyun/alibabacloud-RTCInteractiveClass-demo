@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alivc_biginteractiveclass_bg_online_dialog"
+    android:orientation="horizontal">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/alivc_voicecall_tv_online_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="在线列表"
+            android:textColor="#2F2F2F"
+            android:textSize="@dimen/alivc_biginteractiveclass_size_text_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/divider_view1"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:background="#EDEDED"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alivc_voicecall_tv_online_dialog_title" />
+
+
+        <TextView
+            android:id="@+id/alivc_biginteractiveclass_online_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_16"
+            android:gravity="center"
+            android:textColor="@color/alivc_biginteractiveclass_color_text_333333"
+            android:textSize="@dimen/alivc_biginteractiveclass_size_text_12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_view1"
+            tools:text="当前在线: 22人" />
+
+        <TextView
+            android:id="@+id/alivc_biginteractiveclass_liamai_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_16"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:textColor="@color/alivc_biginteractiveclass_color_text_333333"
+            android:textSize="@dimen/alivc_biginteractiveclass_size_text_12"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_view1" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/online_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="@dimen/alivc_common_margin_40"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alivc_biginteractiveclass_online_number_tv" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

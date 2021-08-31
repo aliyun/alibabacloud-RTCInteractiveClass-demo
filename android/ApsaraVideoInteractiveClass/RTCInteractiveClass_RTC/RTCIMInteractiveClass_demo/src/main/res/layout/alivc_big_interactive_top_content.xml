@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_title_cl"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginStart="162dp"
+    android:background="@android:color/transparent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/alivc_big_interactive_class_tv_teacher_display_name_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alivc_common_margin_18"
+        android:background="@drawable/alivc_biginteractiveclass_item_nomal_student_text_bg"
+        android:ellipsize="end"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/alivc_biginteractiveclass_color_text_333333"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_12"
+        app:layout_constraintBottom_toBottomOf="@+id/alivc_big_interactive_class_landscape_ib_share"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/alivc_big_interactive_class_landscape_ib_share"
+        tools:text="王老师 (教师)" />
+
+    <TextView
+        android:id="@+id/alivc_big_interactive_class_tv_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alivc_common_margin_18"
+        android:layout_marginTop="@dimen/alivc_common_margin_4"
+        android:background="@drawable/alivc_biginteractiveclass_item_nomal_teacher_text_bg"
+        android:ellipsize="end"
+        android:paddingLeft="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/alivc_biginteractiveclass_color_365AFF"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_12"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alivc_big_interactive_class_tv_teacher_display_name_notify"
+        tools:text="布吉正在发言" />
+
+    <TextView
+        android:id="@+id/alivc_big_interactive_class_tv_landscape_channel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/alivc_biginteractiveclass_color_text_white"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_14"
+        app:layout_constraintBottom_toBottomOf="@+id/alivc_big_interactive_class_landscape_ib_share"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/alivc_big_interactive_class_landscape_ib_share"
+        tools:text="3242424234" />
+
+    <ImageView
+        android:id="@+id/alivc_big_interactive_class_landscape_ib_share"
+        android:layout_width="@dimen/alivc_biginteractiveclass_height_titlebar_24"
+        android:layout_height="@dimen/alivc_biginteractiveclass_height_titlebar_24"
+        android:layout_marginTop="@dimen/alivc_biginteractiveclass_margin_12"
+        android:layout_marginEnd="@dimen/alivc_biginteractiveclass_padding_20"
+        android:background="@null"
+        android:src="@drawable/alivc_biginteractiveclass_leavel_channel"
+        app:layout_constraintRight_toLeftOf="@+id/alivc_big_interactive_class_tv_landscape_channel_name"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
+
