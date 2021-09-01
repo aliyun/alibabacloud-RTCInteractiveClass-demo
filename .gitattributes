@@ -1,3 +1,2 @@
-/Users/yandesheng/opensource_external/alibabacloud-RTCInteractiveClass-demo/ios/AliRTC_UserCase/RTCSolution/AIMSDK-3.0.0.23/Gaea.framework/Gaea filter=lfs diff=lfs merge=lfs -text
 ios/AliRTC_UserCase/RTCSolution/AIMSDK-3.0.0.23/Gaea.framework/* filter=lfs diff=lfs merge=lfs -text
 ios/AliRTC_UserCase/RTCSolution/AIMSDK-3.0.0.23/libaim.framework/Versions/A/* filter=lfs diff=lfs merge=lfs -text
